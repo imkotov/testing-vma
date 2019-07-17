@@ -38,6 +38,9 @@ div.profile {
   border-radius: 15px 15px 0 0;
   margin-bottom: 1px;
 }
+div.head {
+  padding: 3px;
+}
 div.ablock {
   max-width: 100%;
   text-align: right;
