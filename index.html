@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>KON</title>
+    <title>CakeCoin</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="ui/css/master.css">
     <link rel="stylesheet" href="ui/css/fa.css">
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="block head">
-        KON
+        CakeCoin
       </div>
       <div class="ablock">
         Settings
@@ -26,12 +26,11 @@
         Profile
       </div>
       <div class="block-2 hover-element">
-        <i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;<b class="username">{%first_name%}></b>
+        <i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;<b class="username">{userid}</b>
       </div>
       <div class="block hover-element">
         <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;&nbsp;<b class="balance">0</b> AC
       </div>
-      <div class="test"></div>
     </div>
   </body>
   <script src="bundle.js"></script>
@@ -39,15 +38,10 @@
   function findGetParameter(parameterName) {
     var result = null,
         tmp = [];
-    location.search
-        .substr(1)
-        .split("&")
-        .forEach(function (item) {
-          tmp = item.split("=");
-          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-        });
+    location.search.substr(1).split("&").forEach(function (item) { tmp = item.split("="); if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]); });
     return result;
   };
-  $('.test').html(location.search.substr(1));
+  let user_id = findGetParameter('vk_user_id');
+  $('.username').html('id'+user_id);
   </script>
 </html>
