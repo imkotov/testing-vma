@@ -36,9 +36,18 @@
   </body>
   <script src="bundle.js"></script>
   <script type="text/javascript">
-  connect.send("VKWebAppGetUserInfo", {})
-  .then(data => handleResponse(data))
-  .catch(error => handleError(error));
-  $('.test').html(data);
+  function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+  };
+  $('.test').html(location.search.substr(1));
   </script>
 </html>
