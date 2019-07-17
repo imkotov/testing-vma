@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 15px;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+html {
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+
+
+div.block {
+  max-width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0px 20px 25px 0px rgba(47, 50, 50, 0.01);
+  font-size: 15px;
+}
+div.block-2 {
+  max-width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0px 20px 25px 0px rgba(47, 50, 50, 0.01);
+  font-size: 15px;
+}
+div.profile {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 1px;
+}
+div.ablock {
+  max-width: 100%;
+  text-align: right;
+  padding: 6px;
+  padding-right: 15px;
+  color: #44abff;
+}
+div.ablock2 {
+  max-width: 100%;
+  text-align: right;
+  padding: 6px;
+  padding-right: 15px;
+  color: #6d6d6d;
+}
+div.latest { margin-bottom: 1px; }
+div.hover-element:active { background-color: #eaeaea; }
+div.refresh {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+div.refresh-data {
+  background-color: white;
+  box-shadow: 15px 10px 10px 5px rgba(47, 50, 50, 0.05);
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+}
+div.forms {
+  text-align: center;
+}
+
+
+a {
+  color: #44abff;
+  text-decoration: none;
+  outline: none;
+}
+a:href { color: #44abff; }
+
+
+
+input {
+  border: 1px solid #ededed;
+  background: #ededed;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: left;
+  margin-bottom: 5px;
+  width: 70%;
+  outline: none;
+  text-decoration: none;
+}
+input.button {
+  text-align: center;
+}
+input.button:active {
+  background: #d8d8d8;
+}
+
+
+
+button.btn-clicker {
+  width: 100%;
+  border: none;
+  background-color: #44abff;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial;
+}
+button.btn-clicker:active {
+  background-color: #44abf1;
+}

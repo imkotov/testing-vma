@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>KON</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ui/css/master.css">
+    <link rel="stylesheet" href="ui/css/fa.css">
     <script src="bundle.js"></script>
   </head>
   <body>
-    KON - Vault4You
+    <body>
+      <div class="application">
+        <div class="refresh" id="refresh">
+          <div class="refresh-data">
+            <i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;&nbsp; Balance updated
+          </div>
+        </div>
+        <div class="block head">
+          KON
+        </div>
+        <div class="ablock">
+          Settings
+        </div>
+        <div class="block-2 profile">
+          Profile
+        </div>
+        <div class="block-2 hover-element">
+          <i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;<b class="username">{%first_name%}></b>
+        </div>
+        <div class="block hover-element">
+          <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;&nbsp;<b class="balance">0</b> AC
+        </div>
+        <div class="block hover-element" id="open-qr-scanner">
+          <i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Tap to scan QR-Code!
+        </div>
+      </div>
+    </body>
   </body>
 </html>
