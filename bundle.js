@@ -4,7 +4,7 @@
 
   connect.send("VKWebAppInit", {});
   connect.subscribe((e) => {
-    console.log(e.detail.data.type);
+    console.log(e.detail.type);
   });
 
   connect.send("VKWebAppGetUserInfo", {});
