@@ -4,7 +4,9 @@
 
   connect.send("VKWebAppInit", {});
   connect.subscribe((e) => {
-    console.log(e.detail.type);
+    if(e.detail.type == "VKWebAppGetUserInfoResult") {
+      $('.username').html(e.detail.data.first_name+' '+e.detail.data.last_name);
+    }
   });
 
   connect.send("VKWebAppGetUserInfo", {});
