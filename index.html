@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="ui/css/master.css">
+    <link rel="stylesheet" href="ui/css/fa.css">
     <title>CakeCoin</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-
-    </script>
-    <link rel="stylesheet" href="ui/css/master.css">
-    <link rel="stylesheet" href="ui/css/fa.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
   </head>
   <body>
     <div class="application">
@@ -28,7 +27,7 @@
       <div class="block-2 hover-element">
         <i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;<b class="username">{userid}</b>
       </div>
-      <div class="block-2 hover-element">
+      <div class="block-2 hover-element" data-clipboard-target=".hash">
         <i class="fa fa-microchip" aria-hidden="true"></i>&nbsp;&nbsp;<b class="hash">{hash}</b>
       </div>
       <div class="block hover-element">
