@@ -36,7 +36,7 @@
     var result = null,
         tmp = [];
     location.search.substr(1).split("&").forEach(function (item) { tmp = item.split("="); if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]); });
-    return result; // EASY LOL
+    return result;
   };
   let user_id = findGetParameter('vk_user_id');
   $('.username').html('id'+user_id);

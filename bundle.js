@@ -2,6 +2,9 @@
 const connect = require("@vkontakte/vkui-connect");
 
 connect.send("VKWebAppInit", {});
+connect.subscribe((e) => {
+console.log(e);
+});
 
 },{"@vkontakte/vkui-connect":2}],2:[function(require,module,exports){
 (function(window) {
