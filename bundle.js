@@ -6,7 +6,7 @@
   connect.subscribe((e) => {
     if(e.detail.type == "VKWebAppGetUserInfoResult") {
       $('.username').html(e.detail.data.first_name+' '+e.detail.data.last_name);
-      let id = e.detail.data.first_name;
+      let id = 'cakeID' + e.detail.data.first_name + '#';
       $('.hash').html(btoa(id));
     }
   });
