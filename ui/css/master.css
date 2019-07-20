@@ -93,8 +93,8 @@ input {
   border-radius: 5px;
   text-align: left;
   margin-bottom: 5px;
-  width: 70%;
   outline: none;
+  width: 80%;
   text-decoration: none;
 }
 input.button {
@@ -120,4 +120,8 @@ button.btn-clicker {
 }
 button.btn-clicker:active {
   background-color: #44abf1;
+}
+
+div.form {
+  text-align: center;
 }
