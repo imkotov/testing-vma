@@ -107,11 +107,11 @@ input.button:active {
 
 
 button.btn-clicker {
-  width: 100%;
+  width: 81%;
   border: none;
   background-color: #44abff;
   color: white;
-  padding: 15px;
+  padding: 9px;
   border-radius: 5px;
   outline: none;
   text-decoration: none;
